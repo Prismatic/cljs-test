@@ -8,7 +8,7 @@ Simple testing library for ClojureScript, mirroring `clojure.test` as much as po
 
 ```clojure
 (ns mytest-ns
-  (:use-macros [cljs-test.core :only [deftest is= is]]))
+  (:use-macros [cljs-test.macros :only [deftest is= is]]))
   
 (deftest simple-case
   (is= 1 (+ 0 1))
